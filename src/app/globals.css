@@ -9,7 +9,7 @@
   --color-bg-section: #f1f5f9;
   --color-text-main: #1e293b;
   --color-text-sub: #64748b;
-  --font-sans: var(--font-noto-sans-jp);
+  --font-sans: var(--font-zen-kaku), var(--font-noto-sans-jp), "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 html {
@@ -19,5 +19,14 @@ html {
 body {
   background: #ffffff;
   color: var(--color-text-main);
-  font-family: var(--font-sans), sans-serif;
+  font-family: var(--font-zen-kaku), var(--font-noto-sans-jp), "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "palt";
+  letter-spacing: 0.02em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-feature-settings: "palt";
+  letter-spacing: 0.04em;
 }

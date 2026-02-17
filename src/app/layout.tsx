@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP } from "next/font/google";
+import { Zen_Kaku_Gothic_New, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+
+const zenKaku = Zen_Kaku_Gothic_New({
+  variable: "--font-zen-kaku",
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+});
 
 const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-sans-jp",
@@ -36,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${notoSansJP.variable} antialiased`}>{children}</body>
+      <body className={`${zenKaku.variable} ${notoSansJP.variable} antialiased`}>{children}</body>
     </html>
   );
 }
