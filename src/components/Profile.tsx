@@ -9,11 +9,11 @@ export default function Profile() {
         </div>
         <div className="flex flex-col items-center gap-10 md:flex-row">
           {/* Profile image placeholder */}
-          <div className="flex h-48 w-48 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary to-accent text-6xl text-white">
-            M
+          <div className="flex h-48 w-48 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary to-accent text-5xl text-white">
+            もっ
           </div>
           <div>
-            <h3 className="mb-2 text-2xl font-bold text-primary">南 智貴</h3>
+            <h3 className="mb-2 text-2xl font-bold text-primary">もっくん先生</h3>
             <p className="mb-4 text-sm font-medium text-accent">
               医学部専門予備校 英語科主任
             </p>
